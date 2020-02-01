@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(87, 95, 97);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    float: left;
+    display: block;
+    padding: 27px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#section1{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(139, 139, 146);
+}
+#section2{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+    background-color: silver;
+}
+#section3{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+    background-color: floralwhite;
+}
+h2{
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+}
+h3{
+    margin: 50px;
+    text-align: center;
+    padding: 0;
+}
+.slika1{
+    float: left;
+    margin:0 50px 50px 450px;
+}
+p{
+    padding: 0;
+    margin: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+.tabela{
+    margin-left: 15px;
+}
+.poruka{
+    width: 85%;
+    max-width: 400px;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 0 0 560px;
+}
+.txtb{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+}
+.txtb input, .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+}
