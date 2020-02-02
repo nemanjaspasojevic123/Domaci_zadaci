@@ -24,8 +24,8 @@ nav{
 .logo{
     color: whitesmoke;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    display: inline-block;
+    padding-top: 5px;
 }
 .navigacija{
     display: flex;
