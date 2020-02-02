@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(pngguru.com.png);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8px;
+    background-color: #24252a;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.navigacija{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.navigacija li{
+    list-style: none;
+}
+.navigacija a{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#sekcija1{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+}
+#sekcija2{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+}
+#sekcija3{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+    margin: 100px;
+}
+.poruka{
+    width: 85%;
+    max-width: 700px;
+    position: absolute;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 0 0 410px;
+    padding: 20px;
+}
+.txtb{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+}
+.txtb input, .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+}
+.button{
+    display: inline-block;
+    background: gray;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
