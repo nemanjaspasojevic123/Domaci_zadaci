@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    justify-content: space-around;
+    min-height: 8px;
+    background-color: white;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+.navigacija{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+.navigacija li{
+    display: flex;
+    list-style: none;
+}
+.navigacija a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+#sekcija1{
+    height: 500px;
+    display: inline-block;
+    width: 100%;
+    background-image: url(town.png);
+    background-size: cover;
+    background-color: gray;
+}
+#sekcija2{
+    height: 600px;
+    display: inline-block;
+    width: 100%;
+}
+#sekcija3{
+    height: 750px;
+    display: inline-block;
+    width: 100%;
+    background-color: yellowgreen;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 150px;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+.poruka{
+    width: 85%;
+    max-width: 700px;
+    position: absolute;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 0 0 410px;
+    padding: 20px;
+}
+.txtb{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+}
+.txtb input, .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+}
+.button{
+    display: inline-block;
+    background: gray;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.leva{
+    float: left;
+    margin-top: 150px;
+    margin-left: 150px;
+    text-align: center;
+    
+}
+.desna{
+    float: right;
+    margin-top: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+.dugme2{
+    cursor: pointer;
+    background-color: green;
+}
+.dugme3{
+    cursor: pointer;
+    background-color: green;
+}
