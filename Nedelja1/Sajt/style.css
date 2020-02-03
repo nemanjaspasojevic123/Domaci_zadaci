@@ -57,13 +57,13 @@ h2{
 }
 .poruka{
     width: 85%;
-    max-width: 700px;
+    max-width: 1400px;
     position: absolute;
     background: #f1f1f1;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
-    margin: 0 0 0 410px;
+    margin: 0 0 0 115px;
     padding: 20px;
 }
 .txtb{
@@ -84,12 +84,15 @@ h2{
 }
 .button{
     display: inline-block;
-    background: gray;
+    background-color: white;
     padding: 15px 0;
-    width: 100%;
+    width: 15%;
     margin-top: 8px;
     text-transform: uppercase;
     cursor: pointer;
+    border: 5px solid green;
+    border-radius: 30px;
+    color: green;
 }
 .leva{
     float: left;
@@ -106,9 +109,25 @@ h2{
 }
 .dugme2{
     cursor: pointer;
-    background-color: green;
+    background-color: white;
+    border: 5px solid green;
+    border-radius: 15px;
+    color: green;
 }
 .dugme3{
     cursor: pointer;
-    background-color: green;
+    background-color: white;
+    border: 5px solid green;
+    border-radius: 15px;
+    color: green;
+}
+.dugme1{
+    cursor: pointer;
+    background-color: grey;
+    border: 5px solid green;
+    border-radius: 15px;
+    color: green;
+    width: 15%;
+    margin-left: 650px;
+    text-align: center;
 }
