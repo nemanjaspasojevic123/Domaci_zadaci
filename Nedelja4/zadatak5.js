@@ -44,9 +44,7 @@ const app = document.querySelector('#app');
 function prikaziPokemone(sviPokemoni){
     let imena='';
     for(let i = 0; i < sviPokemoni.length; i++){
-        imena += `<div><ul><li> Ime: ${sviPokemoni[i].ime}
-        <li>Vrsta: ${sviPokemoni[i].vrsta}
-    <li>Sposobnosti: ${sviPokemoni[i].sposobnosti}</li></ul>
+        imena += `<div><p> Ime: ${sviPokemoni[i].ime}<br> Vrsta: ${sviPokemoni[i].vrsta}<br> Sposobnosti: ${sviPokemoni[i].sposobnosti}</p>
 <img src=' ${sviPokemoni[i].fotografija}'>
      </div>`
     } return(imena);
@@ -63,9 +61,7 @@ function najjaciPokemon(pokemoni) {
     for (const pokemon of pokemoni) {
         if (max.karakteristike.napad < pokemon.karakteristike.napad)
             max = pokemon;
-            pokemonNaj=`<div><ul><li> Ime: ${max.ime}
-            <li>Vrsta: ${max.vrsta}
-        <li>Sposobnosti: ${max.sposobnosti}</li></ul>
+            pokemonNaj=`<div><p> Ime: ${max.ime}<br> Vrsta: ${max.vrsta}<br> Sposobnosti: ${max.sposobnosti}</p>
     <img src=' ${max.fotografija}'>
          </div>`
     }
