@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Prihodi i rashodi</title>
+</head>
+<body>
+    <div class="vrh">
+        <div class="budzet">Dostupan budžet u martu 2020:</div>
+        <div class="vrednost-budzet">
+            <h3>Stanje na racunu</h3>
+            <p id="stanje"></p>
+        </div>
+            <div class="prihod-vrh">
+                <h3>Ukupan prihod</h3><p id="ukupanPrihod"></p>
+            </div>
+            <div class="rashod-vrh">
+                <h3>Ukupan rashod</h3><p id="ukupanRashod"></p>
+            </div>
+    </div>
+    <div class="sredina">
+            <div class="container2">
+                <select id="dropdown">
+                    <option value="prihod" selected>+</option>
+                    <option value="rashod">-</option>
+                </select>
+              <input type="text" id="opis" placeholder="Dodaj opis">
+              <input type="number" min="1" id="iznos" placeholder="Iznos">
+              <button type="button" id="dugme">OK</button>
+            </div>
+    </div><br>
+    <div class="zacelje">
+        <div class="container3">
+            <div class="prihod">
+                <h3>Prihodi</h3>
+                    <div class="listaPrihoda">
+                        <ul id="items1" class="list-group1"></ul>
+                    </div>
+            </div>
+            <div class="rashod">
+                <h3>Rashodi</h3>
+                    <div class="listaRashoda">
+                        <ul id="items2" class="list-group2"></ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    background-image: radial-gradient(mintcream 0%, gray 100%);
+    font-family: "Trebuchet MS";
+}
+.vrh{
+    text-align: center;
+}
+.sredina{
+    text-align: center;
+}
+.zacelje{
+    text-align: center;
+}
+.prihod{
+    width: 49%;
+    float: left;
+    background-color:  palegreen;
+    border-radius: 30px;
+}
+.rashod{
+    width: 49%;
+    float: right;
+    background-color: palegreen;
+    border-radius: 30px;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+}
