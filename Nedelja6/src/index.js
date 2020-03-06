@@ -1,16 +1,23 @@
 import LaunchList from "./components/launch_list";
 import HeaderList from "./components/header_list";
+import SelectList from "./components/select";
 const app = document.querySelector('#app');
 
-// const header1 = Header1()
 
 const header = document.createElement('header');
 const filters = document.createElement('section');
 const launch_list = LaunchList();
 const header_list = HeaderList();
 
-const footer = document.createElement('footer');
+const selectList = SelectList();
 
-app.append(header_list, launch_list, header, filters, footer)
+selectList.addEventListener('change', ()=>{
+    const list = document.querySelector(".launch-list");
+    app.replaceChild(LaunchList(selectList.value),list);
+});
+
+filters.appendChild(selectList);
+
+app.append(header_list, filters, launch_list, header)
 
 
