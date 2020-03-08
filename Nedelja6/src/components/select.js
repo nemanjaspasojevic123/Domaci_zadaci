@@ -19,5 +19,4 @@ const SelectList = () => {
     return selectYear;
 }
 
-
 export default SelectList;

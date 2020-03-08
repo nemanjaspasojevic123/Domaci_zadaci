@@ -16,6 +16,7 @@ selectList.addEventListener('change', ()=>{
     app.replaceChild(LaunchList(selectList.value),list);
 });
 
+
 filters.appendChild(selectList);
 
 app.append(header_list, filters, launch_list, header)
