@@ -46,6 +46,7 @@ class Form extends React.Component{
                 this.state.contacts.splice(0, 0, contact);
                     this.setState({
                     contacts: this.state.contacts,
+                    filtrirano: this.state.contacts
                     })
             }else{
                 return
@@ -68,9 +69,9 @@ class Form extends React.Component{
 
     handleFilter(e){
         let filtrirano = this.state.contacts.filter(el =>  el.name.includes(e.target.value));
-        let filtrirajImenik = data.filter(el => el.name.includes(e.target.value));
+        // let filtrirajImenik = data.filter(el => el.name.includes(e.target.value));
         this.setState({
-            contacts: filtrirano, filtrirajImenik
+            filtrirano: filtrirano, 
         })
     }
    
@@ -87,7 +88,7 @@ class Form extends React.Component{
                 <Message message={this.state.message}/>
             </div>
             <div>
-                <Contacts contacts={this.state.contacts} />
+                <Contacts contacts={this.state.filtrirano} />
                 <Contacts contacts={data} /> 
             </div>
             </>
