@@ -35,10 +35,10 @@ function App() {
   }
 
   const handleIme = (e) => {
-    setRadnik(e.targrt.value)
+    setRadnik(e.target.value)
   }
   const handlePlata = (e) => {
-    setPlata(e.targrt.value)
+    setPlata(e.target.value)
 
   }
 
