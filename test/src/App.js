@@ -1,30 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { getAllEmployees, postNewEmployee } from './services/dummyServices';
-import { Employees } from './Employees';
+import { postNewEmployee } from './services/dummyServices';
 import { Select } from './Select';
 
 function App() {
-  const [employees,setEmployee] = useState([]);
   const [inputRadnik, setRadnik] = useState('');
   const [inputPlata, setPlata] = useState('');
-  const [niz, setNiz] = useState ([]);
 
-  useEffect(()=> {
-    getAllEmployees().then(data => {
-      setEmployee(data)
-      setNiz(data)
-    })
-  },[])
 
-  const handleChange = (e) => {
-    let selected = e.target.value;
-    if(selected === "all"){
-      setEmployee(niz)
-    }else{
-    let filtered = niz.filter(el => el.value === selected);
-    setEmployee(filtered);
-  }}
   const handleSubmit = (e) =>{
     e.preventDefault()
     if (inputRadnik === '' || inputPlata === ''){
@@ -50,11 +33,8 @@ function App() {
     <input type="submit" value="Ucitaj"/>
    </form>
    <div>
-   <Select handleChange={handleChange} />
+   <Select />
    </div>
-    <div>
-      <Employees employees={employees} value0="all"/>
-    </div>
     </>
   );
 }
